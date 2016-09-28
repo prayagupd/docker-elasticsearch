@@ -41,3 +41,21 @@ This repository contains **Dockerfile** of [Elasticsearch](http://www.elasticsea
     ```
 
 After few seconds, open `http://<host>:9200` to see the result.
+
+```
+curl --noproxy '*' -XGET 172.17.0.2:9200
+{
+  "status" : 200,
+  "name" : "Mantra",
+  "cluster_name" : "datalens",
+  "version" : {
+    "number" : "1.5.0",
+    "build_hash" : "544816042d40151d3ce4ba4f95399d7860dc2e92",
+    "build_timestamp" : "2015-03-23T14:30:58Z",
+    "build_snapshot" : false,
+    "lucene_version" : "4.10.4"
+  },
+  "tagline" : "You Know, for Search"
+}
+
+```
