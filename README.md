@@ -20,7 +20,8 @@ This repository contains **Dockerfile** of [Elasticsearch](http://www.elasticsea
 
 ### Usage
 
-    docker run -d -p 9200:9200 -p 9300:9300 dockerfile/elasticsearch
+    docker build -t elasticsearch .
+    docker run -it/(or -d) --net=host elasticsearch
 
 #### Attach persistent/shared directories
 
