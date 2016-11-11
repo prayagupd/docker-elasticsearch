@@ -22,7 +22,7 @@ RUN wget --no-check-certificate --header "Cookie: oraclelicense=accept-securebac
 ENV JAVA_HOME /opt/java
 ENV PATH $JAVA_HOME/bin:$PATH
 
-ENV ES_PKG_NAME elasticsearch-1.5.0
+ENV ES_PKG_NAME elasticsearch-1.7.3
 
 # Install Elasticsearch.
 RUN \
